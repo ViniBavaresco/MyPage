@@ -4,33 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vinicius Bavaresco</title>
-  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Vinicius Bavaresco</h1>
-    <p>Desenvolvedor Web e de Jogos</p>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-8">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">Vinicius Bavaresco</h1>
+      <p class="text-lg mt-2">Desenvolvedor Web e de Jogos</p>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>Sobre Mim</h2>
-    <p>Sou apaixonado por tecnologia desde criança, com experiência em desenvolvimento de jogos e web.</p>
+  <!-- Sobre Mim -->
+  <section id="about" class="py-12 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Sobre Mim</h2>
+      <p class="text-lg leading-relaxed">
+        Sou apaixonado por tecnologia desde criança, com experiência em desenvolvimento de jogos e web. Amo aprender e criar soluções inovadoras que impactam positivamente as pessoas.
+      </p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projetos</h2>
-    <ul>
-      <li>Jogo Educativo em Java - <a href="https://github.com/seu-repositorio">GitHub</a></li>
-    </ul>
+  <!-- Projetos -->
+  <section id="projects" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Projetos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">Jogo Educativo em Java</h3>
+          <p class="mb-4">Um jogo que ensina lógica de programação de forma divertida.</p>
+          <a href="https://github.com/seu-repositorio" target="_blank" class="text-blue-600 hover:underline">Ver no GitHub</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">Portfólio Responsivo</h3>
+          <p class="mb-4">Uma página pessoal para destacar habilidades e projetos.</p>
+          <a href="https://github.com/seu-repositorio" target="_blank" class="text-blue-600 hover:underline">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:viniciusbavaresco@gmail.com">viniciusbavaresco@gmail.com</a></p>
+  <!-- Habilidades -->
+  <section id="skills" class="py-12 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Habilidades</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <p>Java</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <p>JavaScript</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <p>React</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <p>Spring</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Vinicius Bavaresco</p>
+  <!-- Contato -->
+  <section id="contact" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Contato</h2>
+      <p class="text-lg mb-4">Entre em contato comigo pelos links abaixo:</p>
+      <div class="flex justify-center space-x-4">
+        <a href="mailto:viniciusbavaresco@gmail.com" class="text-blue-600 hover:underline">Email</a>
+        <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+        <a href="https://github.com/seu-github" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Vinicius Bavaresco</p>
+    </div>
   </footer>
 </body>
 </html>
