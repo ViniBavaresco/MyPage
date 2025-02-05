@@ -1,6 +1,6 @@
 # Personal Professional Page
 
-Este projeto é uma página pessoal profissional desenvolvida para apresentar informações sobre Vinicius Bavaresco, um analista e desenvolvedor de software. A página inclui seções sobre o autor, suas habilidades e experiências, além de links para suas redes sociais.
+Este projeto é uma página pessoal profissional desenvolvida para apresentar minhas informações profissionais. A página inclui seções sobre mim, habilidades e experiências, além de links para redes sociais.
 
 ## Estrutura do Projeto
 
