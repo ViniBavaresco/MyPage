@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius Bavaresco</title>
-    <link rel="stylesheet" href="/src/assets/stylesheet/style.css">
-    <script src="/src/scripts/main.js"></script>
+    <link rel="stylesheet" href="/personal-professional-page/src/assets/stylesheet/style.css">
+    <script src="/personal-professional-page/src/scripts/main.js"></script>
 </head>
 <body>
     <nav class="navbar txt-shadow">
@@ -14,7 +14,7 @@
             <li><a href="#sobre">Sobre Mim</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#formacao">Formação</a></li>
-            <li><a href="/src/assets/docs/ViniciusBavaresco.pdf" download class="btn">Baixar CV</a></li>
+            <li><a href="/personal-professional-page/src/assets/docs/ViniciusBavaresco.pdf" download class="btn">Baixar CV</a></li>
         </ul>
         <button class="menu-toggle">☰</button>
     </nav>
@@ -27,7 +27,7 @@
     <section id="sobre" class="section">
         <h2>Sobre Mim</h2>
         <div class="sobre-container">
-            <img src="/src/assets/images/image1.png" alt="Imagem de capa">
+            <img src="/personal-professional-page/src/assets/images/image1.png" alt="Imagem de capa">
             <div class="sobre-texto">
                 <p>Olá! Meu nome é Vinicius Bavaresco e sou desenvolvedor apaixonado por tecnologia. Meu foco está no desenvolvimento web e na criação de soluções eficientes e bem estruturadas. Tenho experiência com:</p>
                 <div class="habilidades">
@@ -54,7 +54,7 @@
         <h2>Projetos</h2>
         <div class="projetos-container">
             <div class="projeto-card">
-                <img src="/src/assets/images/image2.png" alt="Projeto 1">
+                <img src="/personal-professional-page/src/assets/images/image2.png" alt="Projeto 1">
                 <div class="projeto-info">
                     <h3>Conecta</h3>
                     <p>Um projeto de uma rede social profissional</p>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="projeto-card">
-                <img src="/src/assets/images/image4.jpeg" alt="Projeto 2">
+                <img src="/personal-professional-page/src/assets/images/image4.jpeg" alt="Projeto 2">
                 <div class="projeto-info">
                     <h3>Projeto</h3>
                     <p>Em breve novos projetos.</p>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="projeto-card">
-                <img src="/src/assets/images/image4.jpeg" alt="Projeto 3">
+                <img src="/personal-professional-page/src/assets/images/image4.jpeg" alt="Projeto 3">
                 <div class="projeto-info">
                     <h3>Projeto</h3>
                     <p>Em breve novos projetos.</p>
@@ -84,7 +84,7 @@
     <!-- Modal -->
     <div id="modal1" class="modal">
         <div class="modal-content">
-            <img src="/src/assets/images/image3.png" alt="Projeto 1">
+            <img src="/personal-professional-page/src/assets/images/image3.png" alt="Projeto 1">
             <span class="close-modal" onclick="fecharModal('modal1')">&times;</span>
             <h2>Conecta</h2>
             <p style="text-align: justify;">O projeto tem por objetivos gerar valor para quem tem um negócio próprio, e para conectar prestadores de serviços com novos clientes.
@@ -148,7 +148,7 @@
         <div class="certificados-container">
             <div class="certificados-slider">
                 <div class="certificado-card">
-                    <img src="/src/assets/images/image5.png" alt="Certificado 1">
+                    <img src="/personal-professional-page/src/assets/images/image5.png" alt="Certificado 1">
                     <div class="tecnologias">
                         <span class="tecnologia">Networking</span>
                         <span class="tecnologia">Mentoria</span>
@@ -156,7 +156,7 @@
                     </div>
                     <div class="certificado-info">
                         <h3>Conexão Tech Na Prática 1ª Edição 2022</h3>
-                        <a href="/src/assets/docs/CertificadoEstudarNaPrática.PDF" target="_blank">Download</a>
+                        <a href="/personal-professional-page/src/assets/docs/CertificadoEstudarNaPrática.PDF" target="_blank">Download</a>
                     </div>
                 </div>
             </div>
@@ -167,5 +167,10 @@
         <p>&copy; 2025 Vinicius Bavaresco</p>
     </footer>
 
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
