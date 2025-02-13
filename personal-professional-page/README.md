@@ -10,7 +10,7 @@ O projeto possui a seguinte estrutura de arquivos:
 personal-professional-page
 ├── src
 │   ├── assets
-│   │   └── styles
+│   │   └── stylesheet
 │   │       └── style.css      # Estilos CSS para a página
 │   ├── index.html             # Estrutura principal da página
 │   └── scripts

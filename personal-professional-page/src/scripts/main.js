@@ -1,1 +1,11 @@
-// Este arquivo contém o código JavaScript que pode ser utilizado para adicionar interatividade à página, como manipulação de eventos e atualizações dinâmicas de conteúdo.
+document.querySelector(".menu-toggle").addEventListener("click", function() {
+    document.querySelector(".nav-links").classList.toggle("active");
+});
+
+function abrirModal(id) {
+document.getElementById(id).style.display = 'flex';
+}
+
+function fecharModal(id) {
+    document.getElementById(id).style.display = 'none';
+}

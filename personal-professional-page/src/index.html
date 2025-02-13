@@ -1,127 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinicius Bavaresco</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Bavaresco</title>
+    <link rel="stylesheet" href="/src/assets/stylesheet/style.css">
+    <script src="/src/scripts/main.js"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <!-- Header -->
-  <header class="fundo text-white py-8">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold">Vinicius Bavaresco</h1>
-      <p class="text-lg mt-2">Analista e Desenvolvedor de Software</p>
-    </div>
-    <!--<div class="absolute top-4 right-4 flex space-x-4">
-      <select id="language-selector" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">
-        <option value="pt">Português</option>
-        <option value="es">Español</option>
-        <option value="en">English</option>
-      </select>
-    </div>-->
-  </header>
+<body>
+    <nav class="navbar txt-shadow">
+        <span class="logo">Vinicius Bavaresco</span>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="/src/assets/docs/ViniciusBavaresco.pdf" download class="btn">Baixar CV</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+    </nav>
 
-  <!-- Sobre Mim -->
-  <section id="about" class="py-12 bg-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Sobre Mim</h2>
-      <p class="text-lg leading-relaxed">
-        Olá, meu nome é Vinicius Bavaresco, tenho 21 anos e sou apaixonado por tecnologia desde criança. Meu interesse começou ao 
-        jogar no computador, o que despertou minha curiosidade pelo desenvolvimento de jogos e me levou a buscar cursos técnicos 
-        na área. Mais tarde, tive a oportunidade de conhecer a Generation, onde fui introduzido ao universo do desenvolvimento 
-        web. Essa experiência foi um marco para mim, pois, graças ao meu primeiro contato com programação em jogos, me adaptei 
-        rapidamente e me apaixonei ainda mais pela área.
-        <br><br>
-        No meu tempo livre, gosto de assistir séries, jogar videogames, sair com amigos e passar momentos com a família. Sou uma 
-        pessoa persistente, comunicativa e acredito na importância do trabalho em equipe com engajamento e colaboração. Valorizo 
-        o aprendizado contínuo e acredito que sempre podemos evoluir e superar desafios diariamente.      
-      </p>
-    </div>
-  </section>
+    <header class="hero">
+        <h1 class="typing">Vinicius Bavaresco</h1>
+        <h2>Desenvolvedor de Software</h2>
+    </header>
 
-  <!-- Projetos -->
-  <section id="projects" class="py-12 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Projetos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-2">Jogo Educativo em Java</h3>
-          <p class="mb-4">Um jogo que ensina lógica de programação de forma divertida.</p>
-          <a href="https://github.com/seu-repositorio" target="_blank" class="text-blue-600 hover:underline">Ver no GitHub</a>
+    <section id="sobre" class="section">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-container">
+            <img src="/src/assets/images/image1.png" alt="Imagem de capa">
+            <div class="sobre-texto">
+                <p>Olá! Meu nome é Vinicius Bavaresco e sou desenvolvedor apaixonado por tecnologia. Meu foco está no desenvolvimento web e na criação de soluções eficientes e bem estruturadas. Tenho experiência com:</p>
+                <div class="habilidades">
+                    <span class="habilidade java">Java</span>
+                    <span class="habilidade spring">Spring</span>
+                    <span class="habilidade mysql">MySQL</span>
+                    <span class="habilidade angular">Angular</span>
+                    <span class="habilidade git">Git</span>
+                    <span class="habilidade html">HTML</span>
+                    <span class="habilidade css">CSS</span>
+                    <span class="habilidade javascript">JavaScript</span>
+                    <span class="habilidade bootstrap">Bootstrap</span>
+                </div>
+                <p>Sempre buscando evoluir, valorizo o aprendizado contínuo e o trabalho em equipe para criar projetos de alto impacto.</p>
+            </div>
+            <p class="sobre-texto2">Atualmente, tenho 21 anos, e meu interesse por tecnologia surgiu desde a infância ao jogar no computador/videogame, o que despertou minha curiosidade pelo desenvolvimento de jogos e me levou a buscar cursos técnicos na área. Mais tarde, tive a oportunidade de conhecer a Generation Brasil, onde fui introduzido ao universo do desenvolvimento web. Essa experiência foi um marco para mim, pois, graças ao meu primeiro contato com a programação de jogos, consegui me adaptar rapidamente e me aprofundar ainda mais na área.<br><br>No meu tempo livre, 
+                gosto de assistir séries, jogar videogames, sair com amigos e passar momentos com a família. Sou uma pessoa 
+                persistente, comunicativa e acredito na importância do trabalho em equipe com engajamento e colaboração. 
+            </p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-2">Portfólio Responsivo</h3>
-          <p class="mb-4">Uma página pessoal para destacar habilidades e projetos.</p>
-          <a href="https://github.com/seu-repositorio" target="_blank" class="text-blue-600 hover:underline">Ver no GitHub</a>
+    </section>
+
+    <section id="projetos" class="section" style="background: #0d386a;">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto-card">
+                <img src="/src/assets/images/image2.png" alt="Projeto 1">
+                <div class="projeto-info">
+                    <h3>Conecta</h3>
+                    <p>Um projeto de uma rede social profissional</p>
+                    <button onclick="abrirModal('modal1')">Ver Mais</button>
+                </div>
+            </div>
+            <div class="projeto-card">
+                <img src="/src/assets/images/image4.jpeg" alt="Projeto 2">
+                <div class="projeto-info">
+                    <h3>Projeto</h3>
+                    <p>Em breve novos projetos.</p>
+                    <button onclick="abrirModal('modal2')">Ver Mais</button>
+                </div>
+            </div>
+            <div class="projeto-card">
+                <img src="/src/assets/images/image4.jpeg" alt="Projeto 3">
+                <div class="projeto-info">
+                    <h3>Projeto</h3>
+                    <p>Em breve novos projetos.</p>
+                    <button onclick="abrirModal('modal3')">Ver Mais</button>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+    
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <img src="/src/assets/images/image3.png" alt="Projeto 1">
+            <span class="close-modal" onclick="fecharModal('modal1')">&times;</span>
+            <h2>Conecta</h2>
+            <p style="text-align: justify;">O projeto tem por objetivos gerar valor para quem tem um negócio próprio, e para conectar prestadores de serviços com novos clientes.
 
-<!-- Habilidades -->
-<section id="skills" class="py-12 bg-white">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl font-semibold mb-4">Habilidades</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <p>Java</p>
-      </div>
-      <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <p>JavaScript</p>
-      </div>
-      <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <p>HTML</p>
-      </div><div class="bg-gray-100 p-4 rounded-lg shadow">
-        <p>CSS</p>
-      </div><div class="bg-gray-100 p-4 rounded-lg shadow">
-        <p>Angular</p>
-      </div>
-      <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <p>Spring</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Experiências profissionais -->
-  <section id="experiences" class="py-12 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Formação acadêmica</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-2">Ciência da Computação</h3>
-          <p class="mb-4">Instituição de Ensino: Universidade Paulista</p>
-          <p class="mt-4">Início: 07/2024 - Conclusão: Em andamento</p>
+                Através da rede social Conecta o usuário poderá alcançar o seu público-alvo de maneira eficaz e ampliar o alcance do seu negócio.
+                
+                O projeto também pretende obter inclusão ao inserir pessoas no mercado de trabalho, conectar pessoas, aumentar a rede de clientes e criar oportunidades de parcerias ou contratações.</p>
+            <a href="https://rede-conecta.netlify.app/#/landing-page" target="_blank">Acessar Projeto</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-2">Análise e Desenvolvimento de Sistemas</h3>
-          <p class="mb-4">Instituição de Ensino: Universidade Paulista</p>
-          <p class="mt-4">Início: 02/2022 - Conclusão: 12/2023</p>
+    </div>
+
+    <section id="formacao" class="section">
+        <h2>Formação Acadêmica</h2>
+        <div class="formacao-container">
+            <div class="linha-formacao"></div>
+            <div class="formacao-item">
+                <div class="formacao-bola"></div>
+                <div class="formacao-dados">
+                    <h3>Universidade Paulista</h3>
+                    <p>Período: Julho 2024 - Cursando</p>
+                    <p>Curso: Ciência da Computação</p>
+                </div>
+            </div>
+            <div class="formacao-item">
+                <div class="formacao-bola"></div>
+                <div class="formacao-dados">
+                    <h3>Digital Innovation One</h3>
+                    <p>Período: Junho 2022 - Agosto 2022</p>
+                    <p>Bootcamp: Fullstack Developer</p>
+                </div>
+            </div>
+            <div class="formacao-item">
+                <div class="formacao-bola"></div>
+                <div class="formacao-dados">
+                    <h3>Universidade Paulista</h3>
+                    <p>Período: Janeiro 2022 - Dezembro 2023</p>
+                    <p>Curso: Análise e Desenvolvimento de Sistemas</p>
+                </div>
+            </div>
+            <div class="formacao-item">
+                <div class="formacao-bola"></div>
+                <div class="formacao-dados">
+                    <h3>Generation Brasil</h3>
+                    <p>Período: Setembro 2021 - Dezembro 2021</p>
+                    <p>Bootcamp: Desenvolvedor Web Fullstack Java Junior</p>
+                </div>
+            </div>
+            <div class="formacao-item">
+                <div class="formacao-bola"></div>
+                <div class="formacao-dados">
+                    <h3>Fundação Bradesco</h3>
+                    <p>Período: Fevereiro 2009 - Dezembro 2020</p>
+                    <p>Ensino Fundamental I e II, Ensino Médio</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contato -->
-  <section id="contact" class="py-12 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Contato</h2>
-      <p class="text-lg mb-4">Entre em contato comigo pelos links abaixo:</p>
-      <div class="flex justify-center space-x-4">
-        <a href="mailto:vinibava03@gmail.com" class="text-blue-600 hover:underline">Email</a>
-        <a href="https://www.linkedin.com/in/vinicius-bavaresco-46a549222/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
-        <a href="https://github.com/ViniBavaresco" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
-      </div>
-    </div>
-  </section>
+    <section id="certificados" class="section">
+        <h2>Certificados</h2>
+        <div class="certificados-container">
+            <div class="certificados-slider">
+                <div class="certificado-card">
+                    <img src="/src/assets/images/image5.png" alt="Certificado 1">
+                    <div class="tecnologias">
+                        <span class="tecnologia">Networking</span>
+                        <span class="tecnologia">Mentoria</span>
+                        <span class="tecnologia">Inovação </span>
+                    </div>
+                    <div class="certificado-info">
+                        <h3>Conexão Tech Na Prática 1ª Edição 2022</h3>
+                        <a href="/src/assets/docs/CertificadoEstudarNaPrática.PDF" target="_blank">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="fundo text-white py-4">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 Vinicius Bavaresco</p>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Vinicius Bavaresco</p>
+    </footer>
+
 </body>
 </html>
